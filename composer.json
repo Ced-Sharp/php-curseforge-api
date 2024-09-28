@@ -1,19 +1,24 @@
 {
-    "name": "aternos/curseforge-api",
-    "description": "PHP Client for the CurseForge API.",
+    "name": "cedsharp/curse-tools-api",
+    "description": "PHP Client for the CurseForge API, using the Curse Tools proxy.",
     "keywords": [
         "curseforge",
+        "curse.tools",
         "mods",
         "plugins",
         "php",
         "api"
     ],
-    "homepage": "https://github.com/aternosorg/php-curseforge-api",
+    "homepage": "https://github.com/Ced-Sharp/php-curseforge-api",
     "license": "MIT",
     "authors": [
         {
             "name": "Aternos GmbH",
             "homepage": "https://aternos.gmbh"
+        },
+        {
+            "name": "Ced-Sharp",
+            "homepage": "https://cedsharp.ca"
         }
     ],
     "require": {
