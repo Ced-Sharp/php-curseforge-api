@@ -4,7 +4,7 @@ info:
   description: HTTP API for CurseForge
   version: 1.0.0
 servers:
-  - url: https://api.curseforge.com
+  - url: https://api.curse.tools
 tags:
   - name: Games
   - name: Categories
@@ -13,7 +13,7 @@ tags:
   - name: Fingerprints
   - name: Minecraft
 paths:
-  /v1/games:
+  /v1/cf/games:
     get:
       tags:
         - Games
@@ -50,7 +50,7 @@ paths:
           description: Internal Server Error
       security:
         - ApiKeyAuth: [ ]
-  /v1/games/{gameId}:
+  /v1/cf/games/{gameId}:
     get:
       tags:
         - Games
@@ -80,7 +80,7 @@ paths:
           description: Internal Server Error
       security:
         - ApiKeyAuth: [ ]
-  /v1/games/{gameId}/versions:
+  /v1/cf/games/{gameId}/versions:
     get:
       tags:
         - Games
@@ -110,7 +110,7 @@ paths:
           description: Internal Server Error
       security:
         - ApiKeyAuth: [ ]
-  /v2/games/{gameId}/versions:
+  /v2/cf/games/{gameId}/versions:
     get:
       tags:
         - Games
@@ -140,7 +140,7 @@ paths:
           description: Internal Server Error
       security:
         - ApiKeyAuth: [ ]
-  /v1/games/{gameId}/version-types:
+  /v1/cf/games/{gameId}/version-types:
     get:
       tags:
         - Games
@@ -177,7 +177,7 @@ paths:
           description: Internal Server Error
       security:
         - ApiKeyAuth: [ ]
-  /v1/categories:
+  /v1/cf/categories:
     get:
       tags:
         - Categories
@@ -221,7 +221,7 @@ paths:
           description: Internal Server Error
       security:
         - ApiKeyAuth: [ ]
-  /v1/mods/search:
+  /v1/cf/mods/search:
     get:
       tags:
         - Mods
@@ -340,7 +340,7 @@ paths:
           description: Internal Server Error
       security:
         - ApiKeyAuth: [ ]
-  /v1/mods/{modId}:
+  /v1/cf/mods/{modId}:
     get:
       tags:
         - Mods
@@ -368,7 +368,7 @@ paths:
           description: Internal Server Error
       security:
         - ApiKeyAuth: [ ]
-  /v1/mods:
+  /v1/cf/mods:
     post:
       tags:
         - Mods
@@ -394,7 +394,7 @@ paths:
           description: Internal Server Error
       security:
         - ApiKeyAuth: [ ]
-  /v1/mods/featured:
+  /v1/cf/mods/featured:
     post:
       tags:
         - Mods
@@ -422,7 +422,7 @@ paths:
           description: Internal Server Error
       security:
         - ApiKeyAuth: [ ]
-  /v1/mods/{modId}/description:
+  /v1/cf/mods/{modId}/description:
     get:
       tags:
         - Mods
@@ -450,7 +450,7 @@ paths:
           description: Internal Server Error
       security:
         - ApiKeyAuth: [ ]
-  /v1/mods/{modId}/files/{fileId}:
+  /v1/cf/mods/{modId}/files/{fileId}:
     get:
       tags:
         - Files
@@ -485,7 +485,7 @@ paths:
           description: Internal Server Error
       security:
         - ApiKeyAuth: [ ]
-  /v1/mods/{modId}/files:
+  /v1/cf/mods/{modId}/files:
     get:
       tags:
         - Files
@@ -554,7 +554,7 @@ paths:
           description: Internal Server Error
       security:
         - ApiKeyAuth: [ ]
-  /v1/mods/files:
+  /v1/cf/mods/files:
     post:
       tags:
         - Files
@@ -582,7 +582,7 @@ paths:
           description: Internal Server Error
       security:
         - ApiKeyAuth: [ ]
-  /v1/mods/{modId}/files/{fileId}/changelog:
+  /v1/cf/mods/{modId}/files/{fileId}/changelog:
     get:
       tags:
         - Files
@@ -617,7 +617,7 @@ paths:
           description: Internal Server Error
       security:
         - ApiKeyAuth: [ ]
-  /v1/mods/{modId}/files/{fileId}/download-url:
+  /v1/cf/mods/{modId}/files/{fileId}/download-url:
     get:
       tags:
         - Files
@@ -652,7 +652,7 @@ paths:
           description: Internal Server Error
       security:
         - ApiKeyAuth: [ ]
-  /v1/fingerprints:
+  /v1/cf/fingerprints:
     post:
       tags:
         - Fingerprints
@@ -678,7 +678,7 @@ paths:
           description: Service Unavailable
       security:
         - ApiKeyAuth: [ ]
-  /v1/fingerprints/{gameId}:
+  /v1/cf/fingerprints/{gameId}:
     post:
       tags:
         - Fingerprints
@@ -712,7 +712,7 @@ paths:
           description: Service Unavailable
       security:
         - ApiKeyAuth: [ ]
-  /v1/fingerprints/fuzzy:
+  /v1/cf/fingerprints/fuzzy:
     post:
       tags:
         - Fingerprints
@@ -738,7 +738,7 @@ paths:
           description: Service Unavailable
       security:
         - ApiKeyAuth: [ ]
-  /v1/fingerprints/fuzzy/{gameId}:
+  /v1/cf/fingerprints/fuzzy/{gameId}:
     post:
       tags:
         - Fingerprints
@@ -772,7 +772,7 @@ paths:
           description: Service Unavailable
       security:
         - ApiKeyAuth: [ ]
-  /v1/minecraft/version:
+  /v1/cf/minecraft/version:
     get:
       tags:
         - Minecraft
@@ -798,7 +798,7 @@ paths:
           description: Internal Server Error
       security:
         - ApiKeyAuth: [ ]
-  /v1/minecraft/version/{gameVersionString}:
+  /v1/cf/minecraft/version/{gameVersionString}:
     get:
       tags:
         - Minecraft
@@ -824,7 +824,7 @@ paths:
           description: Internal Server Error
       security:
         - ApiKeyAuth: [ ]
-  /v1/minecraft/modloader:
+  /v1/cf/minecraft/modloader:
     get:
       tags:
         - Minecraft
@@ -856,7 +856,7 @@ paths:
           description: Internal Server Error
       security:
         - ApiKeyAuth: [ ]
-  /v1/minecraft/modloader/{modLoaderName}:
+  /v1/cf/minecraft/modloader/{modLoaderName}:
     get:
       tags:
         - Minecraft
